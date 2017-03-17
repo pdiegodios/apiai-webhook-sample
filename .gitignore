@@ -29,3 +29,7 @@ build/Release
 node_modules
 
 # Created by .ignore support plugin (hsz.mobi)
+*.project
+*.jsdtscope
+.settings/org.eclipse.wst.jsdt.ui.superType.container
+.settings/org.eclipse.wst.jsdt.ui.superType.name
