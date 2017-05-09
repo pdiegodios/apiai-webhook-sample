@@ -1,3 +1,3 @@
-export const baseUrl = 'http://2e148983.ngrok.io';
+const baseUrl = process.env.coffeeWebhookUrl || 'http://localhost:5000';
 
-export default { baseUrl }
+exports.baseUrl = baseUrl;

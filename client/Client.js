@@ -1,5 +1,6 @@
 'use strict'
 const ApiUtil = require('../util/ApiUtil').ApiUtil
+const baseUrl = require('../config.js').baseUrl
 const mimeJson = 'application/json'
 const headers = { 'Content-Type': mimeJson, 'Accept': mimeJson }
 var fetch = require('node-fetch');
@@ -17,7 +18,7 @@ const patchRequest = (url,body) => fetch(url, { method:'PATCH', headers:headers,
   .then(ApiUtil.checkStatus)
   .then(resp => resp.json())
 
-const Client = (url ) => ({
+const Client = (url = baseUrl) => ({
   // Order Requests
   listOrders: () => getRequest(`${url}/order`),
   getOrder: (id) => getRequest(`${url}/order/${id}`),
