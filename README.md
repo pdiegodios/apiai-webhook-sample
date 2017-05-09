@@ -1,4 +1,4 @@
-# Chatbot && Webhook for Coffee Shop
+# Chatbot & Webhook for Coffee Shop
 
 Simple webhook implementation to link the [API.AI](https://api.ai/) agent with our [Coffee Shop Ordering API](https://github.com/DiUS/dius-mentor_boris_coffee-api/).
 
