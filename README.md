@@ -36,12 +36,10 @@ Take a look to the [format response](https://docs.api.ai/docs/webhook#section-fo
 1. Clone, install and run [Coffee Shop Ordering API](https://github.com/DiUS/dius-mentor_boris_coffee-api/) following the README.
 2. Create a new agent in API.AI.
 3. Clone this repository & Install dependencies 
-
   `> npm install`
 4. From your API.AI console, import [agent/CoffeeOrders.zip](https://github.com/pdiegodios/apiai-webhook-sample/blob/master/agent/CoffeeOrders.zip) in your recently created agent.
 5. Set your evironment value for `coffeeWebhookUrl` to point to Coffee Shop Ordering API.
-6. You can deploy it on a Cloud App Platform or run locally your index.js
-  
+6. You can deploy it on a Cloud App Platform or run locally your index.js  
   `> node index.js`
 7. Server is listening. Now, expose your localhost port (5000 by default) if you decided to run locally. I used [ngrok](https://ngrok.com/) for doing this.
 8. Go to your API.AI Console> Fulfillment> check enabled && set URL: exposed_url/webhook
